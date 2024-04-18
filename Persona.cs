@@ -12,6 +12,10 @@ namespace Taller_Git
         public int Edad {  get; set; }
         public float Estatura { get; set; }
         public float Peso { get; set; }
-        // AQUI TRABAJANDO EN TU RAMA
+        public void CalcularIMC() 
+        {
+            var imc = Peso / (Estatura * Estatura);
+            Console.WriteLine($"El IMC de {Nombre} es {imc}");
+        }
     }
 }
